@@ -1,0 +1,32 @@
+.chatlist {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 0.2px solid grey;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.chatlist__right {
+  display: flex;
+  flex: 1;
+}
+
+.chatlist__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.last__message {
+  font-size: 13px;
+}
+
+.chatlist__leftTime {
+  font-size: 13px;
+}
+
+.name {
+  font-size: 18px;
+}

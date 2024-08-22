@@ -1,0 +1,102 @@
+.content {
+  flex: 0.85;
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.content__top {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 6px;
+  border-bottom: 0.2px solid grey;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.content__topLeft {
+  display: flex;
+}
+
+.content__data {
+  margin-left: 10px;
+}
+
+.content__sender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 60px;
+  z-index: 200;
+  margin-bottom: 12px;
+  padding: 0px 20px;
+}
+
+.content__senderInput {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 0.2px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.content__senderInput > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.content__topRight > .MuiSvgIcon-root {
+  font-size: 25px;
+  color: rgb(121, 121, 121) !important;
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.58, 1),
+    color 0.2s cubic-bezier(0.42, 0, 0.58, 1) !important;
+  cursor: pointer;
+  padding: 3px !important;
+  margin-left: 10px;
+}
+
+.content__topRight > .MuiSvgIcon-root:hover {
+  transform: scale(1.1) !important;
+  color: rgb(88, 86, 214) !important;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.content__dataName {
+  font-size: 18px;
+}
+
+.content__dataSeen {
+  font-size: 13px;
+}
+
+.content__senderInput > .MuiSvgIcon-root {
+  color: rgb(88, 86, 214) !important;
+}
+
+.content__senderButton {
+  padding: 9px;
+  font-size: 15px;
+  background-color: rgb(88, 86, 214);
+  color: white;
+  border: 0.2px solid grey;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content__messages {
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
